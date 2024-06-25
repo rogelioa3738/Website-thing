@@ -1,0 +1,69 @@
+/* Body Font import*/
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+/* Heading Font import */
+@import url('https://fonts.googleapis.com/css?family=Special+Elite&display=swap');
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: #000000 (0, 0, 0, 0.8);
+    font-weight: 400;
+    padding: 30px;
+}
+
+
+.wrapper{
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    grid-template-rows: auto;
+    column-gap: 5px;
+    row-gap: 5px;
+
+    grid-template-areas:
+    "banner banner"
+    "nav main"
+    "footer footer"
+    ; 
+
+}
+
+/* Common code area */
+.common{
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Grid areas */
+
+.banner { grid-area: banner;
+    background-color: #00c7ff75;
+
+    /* allows us to center content vertically */
+    display: flex;
+    align-items: center;
+
+}
+
+.nav { grid-area: nav;
+    background-color: #e9afaf;}
+
+.main { grid-area: main;
+    background-color: #c785805e;}
+
+.footer {grid-area: footer;
+    background-color: #04aad975;
+    text-align: right;}
+
+.logo {
+    padding: 10px;
+    float: left;
+    background-color: white;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+    /* Text Styling (for headings) */
+    h1 {
+        font-family: 'Special Elite', sans-serif;
+        font-size: 300%;
+    }
