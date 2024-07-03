@@ -17,7 +17,26 @@
 
         {
 
-            echo $find_rs['Event'];
+            ?>
+
+            <div class="results common">
+
+                <!-- Event name and date -->
+                <b>
+                    <?php echo $find_rs['Event']; ?>
+                    (<?php echo $find_rs['Date']; ?>)
+                </b>
+
+                <p>
+                    <?php echo $find_rs['Description']; ?>
+                </p>
+
+
+            </div>  <!-- / individual result box -->
+
+            <br>
+
+            <?php
 
         }   // end of while
         

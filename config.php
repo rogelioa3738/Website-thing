@@ -1,8 +1,8 @@
 <?php
 
-define("DB_NAME", "00_unofficial_holidays");
-define("DB_USERNAME", "root");
-define("DB_PASSWORD", "");
+define("DB_NAME", "rogelioa3738_Unofficial_holidays");
+define("DB_USERNAME", "_rogelioa3738");
+define("DB_PASSWORD", "Q84U3QvngPDdewAz");
 define("DB_HOST", "localhost");
 
 ?>

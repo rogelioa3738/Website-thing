@@ -67,3 +67,17 @@ body {
         font-family: 'Special Elite', sans-serif;
         font-size: 300%;
     }
+
+/* Set dimension of images for results pages below */
+.holidays-illustration{
+    max-width: 150px;
+    height: auto;
+    float: left;
+    padding-right: 20px;
+}
+
+.results {
+    padding: 20px;
+    background-color: white;
+    min-height: 150px;
+}
