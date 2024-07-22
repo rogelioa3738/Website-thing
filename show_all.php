@@ -5,6 +5,8 @@
     $find_sql = "SELECT * FROM `holidays` ";
     $find_query = mysqli_query($dbconnect, $find_sql);
 
+    $image_URL = "https://projectspace.nz/masseyhighschool/L1_unofficial_holidays/images/"
+
 ?>
 
     <div class="main common">
@@ -19,11 +21,27 @@
 
             ?>
 
-            <div class="results common">
+            <div class="results common">            
+
+            <?php
+            
+            // Image set up
+            $image = $find_rs['Image'];
+            $image_location = $image_URL.$image;
+            $event_name = $find_rs['Event'];
+
+            // More links set up
+
+            // Day and Month formatting
+
+            ?>
+
+                <img class="holiday-illustration" src="<?php echo $image_location; ?>"
+                alt="<?php echo $event_name; ?>">
 
                 <!-- Event name and date -->
                 <b>
-                    <?php echo $find_rs['Event']; ?>
+                    <?php echo $event_name; ?>
                     (<?php echo $find_rs['Date']; ?>)
                 </b>
 
