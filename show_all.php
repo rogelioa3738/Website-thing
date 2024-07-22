@@ -31,6 +31,13 @@
             $event_name = $find_rs['Event'];
 
             // More links set up
+            $google_base = "https://www.google.com/search?q=";
+            $google_search = str_replace(' ', '+', $event_name);
+            $google_url = $google_base.$google_search;
+
+            $wiki_base = "https://en.wikipedia.org/wiki/";
+            $wiki_search = str_replace(' ', '_', $event_name);
+            $wiki_url = $wiki_base.$wiki_search;
 
             // Day and Month formatting
 
@@ -47,6 +54,12 @@
 
                 <p>
                     <?php echo $find_rs['Description']; ?>
+                </p>
+
+                <p>
+                    For more information, you could try searching
+                    <a href="<?php echo $google_url ?>">google</a> or
+                    <a href="<?php echo $wiki_url ?>">wikipedia</a>.
                 </p>
 
 
