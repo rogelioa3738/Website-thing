@@ -15,6 +15,8 @@
 
     <div class="nav common">
 
-        <a href="show_all.php">Show_all</a>
+    <h2>Search</h2>
+
+    <a href="show_all.php" class="button-link">Show_all</a>
 
     </div>  <!-- / nav -->
