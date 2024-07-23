@@ -40,6 +40,17 @@
             $wiki_url = $wiki_base.$wiki_search;
 
             // Day and Month formatting
+            $date_from_database = $find_rs['Date'];
+
+            // Create a DataTime object from the database value
+            $date_object = new DateTime($date_from_database);
+
+            // Format the data as 'day Month' (e.g, '2 January')
+            $formatted_date = $date_object -> format('js F');
+
+            // Superscript the 'th' / 'st' etc <via Chat GPT>
+            $formatted_date = preg_replace('/(\d+)(st|nd|rd|th)/', '$1<sup>$2</sup>', $formatted_date);
+
 
             ?>
 
@@ -49,7 +60,7 @@
                 <!-- Event name and date -->
                 <b>
                     <?php echo $event_name; ?>
-                    (<?php echo $find_rs['Date']; ?>)
+                    (<?php echo $formatted_date; ?>)
                 </b>
 
                 <p>
