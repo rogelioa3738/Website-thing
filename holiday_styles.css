@@ -81,3 +81,25 @@ body {
     background-color: white;
     min-height: 150px;
 }
+
+.button-link{
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    background-color: rgb(93, 212, 93);
+    color: white;
+    border: none;
+    border-radius: 4px;
+
+}
+
+.heading-block{
+    display: flex;
+}
+
+.tag{
+    background-color: #fce8cf;
+}

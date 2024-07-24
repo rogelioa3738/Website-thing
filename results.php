@@ -31,7 +31,7 @@ while($find_rs=mysqli_fetch_assoc($find_query))
             $date_object = new DateTime($date_from_database);
 
             // Format the data as 'day Month' (e.g, '2 January')
-            $formatted_date = $date_object -> format('js F');
+            $formatted_date = $date_object -> format('jS F');
 
             // Superscript the 'th' / 'st' etc <via Chat GPT>
             $formatted_date = preg_replace('/(\d+)(st|nd|rd|th)/', '$1<sup>$2</sup>', $formatted_date);
@@ -42,11 +42,18 @@ while($find_rs=mysqli_fetch_assoc($find_query))
                 <img class="holiday-illustration" src="<?php echo $image_location; ?>"
                 alt="<?php echo $event_name; ?>">
 
-                <!-- Event name and date -->
-                <b>
-                    <?php echo $event_name; ?>
-                    (<?php echo $formatted_date; ?>)
-                </b>
+                <div class="heading-block">
+                    <!-- Event name and date -->
+
+                    <div class="tag"><?php echo $find_rs['Activity_Type']; ?></div>
+
+                    <b>
+                        <?php echo $event_name; ?>
+                        (<?php echo $formatted_date; ?>)
+                    </b>
+
+                </div>  <!-- / heading block -->
+
 
                 <p>
                     <?php echo $find_rs['Description']; ?>
