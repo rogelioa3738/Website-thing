@@ -40,4 +40,7 @@ if (mysqli_connect_errno())
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://googleapis.com/css2?family=Agbalumo&family=Open+Sans&display=swap" rel="stylesheet">
 
+    <!-- Font Awsome Link (for search icon) -->$_COOKIE<!-- Font Awesome Link (for search icon) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" >
+
 </head>

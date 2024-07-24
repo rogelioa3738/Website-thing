@@ -101,5 +101,51 @@ body {
 }
 
 .tag{
-    background-color: #fce8cf;
+    background-color: #c785805e;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 4px;
+    margin-right: 15px;
+}
+
+/* Side bar widget styling */ 
+
+hr {
+    color: white;
+    border-width: 2px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.button-link {
+    display: flex;
+    padding: 10px 20px;
+    background-color: #00c7ff75;
+    border-radius: 4px;
+    justify-content: space-between;
+    align-items: center;
+    border-style: solid;
+    border-color: white;
+}
+
+.full-button {
+    width: 265px;
+    box-sizing: border-box;
+}
+
+.button-link:hover {
+    background-color: rgb(14, 109, 11); /* Changes background color on hover */
+}
+
+.button-text {
+    text-align: left;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.button-emoji {
+    text-align: right;
+    color: white;
 }
