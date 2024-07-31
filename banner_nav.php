@@ -36,18 +36,18 @@
 <hr>
 		
 <!-- Keyword Area -->
+
 <form method="post" action="keyword.php" enctype="multi/form-data">
-	
 	<div class="search-container">
-		<input class="search" type="text" name="keyword_search" required valuez="" placeholder="keyword">
+
+	<input class="search" type="text" name="keyword_search" required valuez="" placeholder="keyword">
 		
 	<button class="button-link" type="submit" name="keyword">
 		<span class="small-mag"><i class="fas fa-search fa-lg"></i><span>
 	</button>
-		
 	</div>  <!-- / search container -->
-	
 </form>
+
 
 <!-- Topic Search -->
 <form class="search-form" method="post" action="topic.php" enctype="multipart/form-data">

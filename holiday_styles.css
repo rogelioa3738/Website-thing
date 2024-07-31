@@ -100,13 +100,16 @@ h1 {
     display: flex;
 }
 
-.tag{
+.tag, .error{
     background-color: #c785805e;
     padding: 5px;
     padding-left: 10px;
     padding-right: 10px;
     border-radius: 4px;
     margin-right: 15px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: lightcoral;
 }
 
 /* Side bar widget styling */ 
