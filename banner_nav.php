@@ -56,7 +56,7 @@
 
         <!-- Topic Drop down goes here... -->
         <select class="search" required>
-            <option value="">>Choose../</option>
+            <option value="" disabled>Choose../</option>
             <option value="Option 1">Option 1</option>
             <option value="Option 2">Option 2</option>
         </select>
