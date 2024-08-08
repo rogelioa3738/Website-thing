@@ -57,8 +57,9 @@
         <!-- Topic Drop down goes here... -->
         <select class="search" required>
             <option value="" disabled>Choose../</option>
-            <option value="Option 1">Option 1</option>
-            <option value="Option 2">Option 2</option>
+            <option value="activity">Activity</option>
+            <option value="career">Career</option>
+            <option value="cause">Cause</option>
         </select>
 
         <button class="button-link" type="submit" name="keyword">
