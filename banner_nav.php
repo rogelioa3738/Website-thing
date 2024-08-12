@@ -54,15 +54,35 @@
 
     <div class="search-container">
 
+    <?php
+
+    $dropdown_sql = "SELECT DISTINCT `Activity_Type` FROM holidays ORDER BY `holidays`.`Activity_Type` ASC";
+    $dropdown_query = mysqli_query($dbconnect, $dropdown_sql);
+
+    ?>
+
         <!-- Topic Drop down goes here... -->
-        <select class="search" required>
+        <select name="topic" class="search" required>
             <option value="" disabled>Choose../</option>
-            <option value="activity">Activity</option>
-            <option value="career">Career</option>
-            <option value="cause">Cause</option>
+
+            <?php
+
+            while($dropdown_rs=mysqli_fetch_assoc($dropdown_query)) {
+                ?>
+
+                <option value="<?php echo $dropdown_rs['Activity_Type'];?>">
+                    <?php echo $dropdown_rs['Activity_Type'];?>
+                </option>
+
+                <?php
+
+            }  // end of drop down while
+
+            ?>
+
         </select>
 
-        <button class="button-link" type="submit" name="keyword">
+        <button class="button-link" type="submit" name="topic_button">
             <span class="small-mag"><i class="fas fa-search fa-lg"></i></span>
         </button>
 

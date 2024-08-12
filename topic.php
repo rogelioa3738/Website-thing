@@ -3,12 +3,12 @@
     include("banner_nav.php");
 
     // check that button was pressed
-    if(isset($_POST['keyword'])) {
+    if(isset($_POST['topic_button'])) {
 
         // retireve search term...
-        $keyword = $_REQUEST['keyword_search'];
+        $topic = $_REQUEST['topic'];
 
-        $find_sql = "SELECT * FROM `holidays` WHERE `Event` LIKE '%$keyword%' ORDER BY `Event` ASC";
+        $find_sql = "SELECT * FROM `holidays` WHERE `Activity_Type` LIKE '$topic' ORDER BY `Event` ASC";
         $find_query = mysqli_query($dbconnect, $find_sql);
         $count = mysqli_num_rows($find_query);
     }
@@ -25,7 +25,7 @@
 
     <div class="main common">
 
-        <h2>Keyword Results (<?php echo $keyword; ?>)</h2>
+        <h2>Activity Type Results (<?php echo $topic; ?>)</h2>
 
         <?php
 
@@ -40,7 +40,7 @@
             ?>
 
         <div class="error">
-            Sorry - there are no results for the keyword <?php echo $keyword; ?>. Please try a dofferent search term.
+            Sorry - there are no results for the keyword <?php echo $topic; ?>. Please try a dofferent search term.
             
         </div>
 
